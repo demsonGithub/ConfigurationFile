@@ -1,0 +1,18 @@
+{
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.startupEditor": "none",
+    "extensions.ignoreRecommendations": true,
+    "editor.fontSize": 22,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "explorer.confirmDelete": false,
+    "js/ts.implicitProjectConfig.checkJs": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    //配置保存时按照eslint文件的规则来处理一下代码
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true,
+      "eslint.autoFixOnSave": true
+    }
+  }
