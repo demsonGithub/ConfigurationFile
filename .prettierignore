@@ -1,6 +1,8 @@
-package.json
-tsconfig.json
-tsconfig.node.json
-vite.config.ts
-/node_modules/
-/dist/
+/dist/*
+.local
+/node_modules/**
+
+**/*.svg
+**/*.sh
+
+/public/*
