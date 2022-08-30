@@ -33,11 +33,29 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   //配置保存时按照eslint文件的规则来处理一下代码
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
   "volar.autoCompleteRefs": true,
   "volar.codeLens.pugTools": false,
-  "volar.codeLens.scriptSetupTools": false
+  "volar.codeLens.scriptSetupTools": false,
+  //快速添加文件头部注释和函数注释
+  "fileheader.configObj": {
+    "autoAdd": false //自动生成注释
+  },
+  "fileheader.cursorMode": {
+    "description": "",
+    "return": "",
+    "param ": ""
+  }
 }
