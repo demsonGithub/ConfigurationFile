@@ -37,18 +37,15 @@ module.exports = {
     '@typescript-eslint/ban-types': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
-    'prettier/prettier': 'error',
+    'prettier/prettier': 'warn',
     // 添加组件命名忽略规则
-    'vue/multi-word-component-names': [
-      'error',
-      {
-        ignores: ['index'], //需要忽略的组件名
-      },
-    ],
+    'vue/multi-word-component-names': ['off'],
+    // 组件命名驼峰规则
+    // 'vue/component-definition-name-casing': ['off'],
     // 禁止出现console
-    'no-console': 'warn',
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     // 禁用debugger
-    'no-debugger': 'warn',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     // 禁止出现重复的 case 标签
     'no-duplicate-case': 'warn',
     // 禁止出现空语句块
@@ -104,7 +101,7 @@ module.exports = {
     // 强制在 JSX 属性中一致地使用双引号或单引号
     // 'jsx-quotes': 'warn',
     // 强制可嵌套的块的最大深度4
-    'max-depth': 'warn',
+    'max-depth': ['warn', 5],
     // 强制最大行数 300
     // "max-lines": ["warn", { "max": 1200 }],
     // 强制函数最大代码行数 50
